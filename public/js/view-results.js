@@ -9,8 +9,7 @@ $(document).ready(function () {
     var str = window.location.href;
     var res = str.split("/");
     $('#search-input').val(res[4])
-    console.log($('#size-image').val() === undefined)
-    //getImages()
+    getImages()
 
 
 
@@ -76,8 +75,8 @@ function getImages(){
 
 $(window).scroll(function() {
     if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-        /*if (ifmethodeIsRun == false)
-        getImages()*/
+        if (ifmethodeIsRun == false)
+        getImages()
     }
 });
 
